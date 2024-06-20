@@ -1,10 +1,12 @@
 # fasthtml hello world
 
-Demo https://fasthtml-hello-world-cramforce-uncurated-tests.vercel.app/
+[Demo](https://fasthtml-hello-world.vercel.app/)
 
-More info https://github.com/AnswerDotAI/fasthtml
+[fasthtml info](https://github.com/AnswerDotAI/fasthtml)
+
+Requires env variable called `SESSKEY` with [any UUID4 as value](https://www.uuidgenerator.net/version4)
 
 ## Notes
 
 - Kind of works out of the box
-- I needed to make that `.sesskey` file. Ideally `fasthtml` would handle read-only-file systems or use `/tmp` or keep it in memory
+- I needed to generate a `.sesskey` file since the lazy generation fails with a read-only file-system but you also want the same key across all functions.
